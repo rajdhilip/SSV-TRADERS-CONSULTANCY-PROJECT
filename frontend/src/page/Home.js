@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 
 const Home = () => {
   const productData = useSelector((state)=>state.product.productList);
-  const homeProductCartList = productData.slice(3,8);
+  const homeProductCartList = productData.slice(28,33);
   const homeProductCartListPaints = productData.filter(
     (el) => el.category === "paint",
     []
@@ -33,10 +33,10 @@ const Home = () => {
       <div className='md:flex gap-4 py-2'>
 
         <div className='md:w-1/2'>
-          <div className='flex gap-3 bg-slate-300 w-36 px-2 items-center rounded-full'>
+          {/* <div className='flex gap-3 bg-slate-300 w-36 px-2 items-center rounded-full'>
             <p className='text-sm font-medium text-slate-900'>Bike Delivery</p>
             <img src='https://cdn-icons-png.flaticon.com/512/2972/2972185.png' className='h-7'/>
-          </div>
+          </div> */}
           <h2 className='text-4xl md:text-7xl font-bold py-3'>SSV Traders <span className='text-red-500 text-'>Exclusively for paints</span></h2>
           <p className='py-3 text-base'>SSV Traders is your one-stop destination for high-quality paints in a variety of shades and finishes. Our extensive range includes everything from vibrant colors to subtle neutrals, suitable for every taste and style. Whether you're looking to refresh your home's interior or protect its exterior, SSV Traders has the perfect paint for the job. Explore our collection today and bring your vision to life with SSV Traders.</p>
           <Link to={"menu/66005acf90ee0f664d38c934"}><button className='font-bold bg-red-500 text-slate-200 px-4 py-2 rounded-md'>Explore now</button>

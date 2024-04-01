@@ -88,10 +88,11 @@ const Newproduct = () => {
           <option value={"cake"}>Cake</option>
           <option value={"burger"}>Burger</option> */}
           <option value={"paint"}>Paint</option>
-          <option value={"accessories"}>Accessories</option>
+          {/* <option value={"accessories"}>Accessories</option> */}
           <option value={"enamels"}>Enamels</option>
           <option value={"putty"}>Putty</option>
           <option value={"texture"}>Texture</option>
+          <option value={"brush"}>Brush</option>
         </select>
 
         <label htmlFor='image'>Image

@@ -50,6 +50,7 @@ const Signup = () => {
   }
 
 console.log(process.env.REACT_APP_SERVER_DOMIN)
+
   const handleSubmit = async(e) => {
     e.preventDefault()
     const {firstName,email,password,confirmPassword} = data
