@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 
 const Home = () => {
   const productData = useSelector((state)=>state.product.productList);
-  const homeProductCartList = productData.slice(28,33);
+  const homeProductCartList = productData.slice(18,23);
   const homeProductCartListPaints = productData.filter(
     (el) => el.category === "paint",
     []

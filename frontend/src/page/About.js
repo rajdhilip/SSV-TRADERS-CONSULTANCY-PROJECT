@@ -2,11 +2,11 @@ import React from 'react';
 
 const Card = ({ image, pdf, title }) => {
   return (
-    <div className="bg-white ml-8 mt-8 w-64 h-72 border-slate-400 rounded-sm shadow-md hover:border -translate-y-2 delay-75 overflow-hidden">
+    <div className="bg-white ml-8 mt-8 w-64 h-72 border-slate-400 rounded-sm shadow-md hover:border -translate-y-2 delay-75 overflow-y relative top-8">
       <div>
         <a href={pdf} target="_blank">
           <img src={image} alt={title} />
-          <h1 className="text-slate-800 text-center mt-6 font-medium text-xl">View {title}</h1>
+          <h1 className="text-slate-800 text-center mt-6 font-medium text-xl"> {title}</h1>
         </a>
       </div>
     </div>
@@ -28,7 +28,7 @@ const About = () => {
 
   return (
     <div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 justify-items-center">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 justify-items-center gap-y-8 overflow-auto ">
         {cardsData.map((card, index) => (
           <Card key={index} image={card.image} pdf={card.pdf} title={card.title} />
         ))}

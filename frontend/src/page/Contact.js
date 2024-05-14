@@ -17,14 +17,14 @@ const Contact = () => {
   }
 
   return (
-    <div className="relative mx-auto w-full max-w-7xl bg-white text-gray-700">
+    <div className="relative mx-auto w-full max-w-7xl bg-white text-gray-700 overflow-y-auto top-10">
       <div className="grid grid-cols-2">
         
         {/* :MAP CONTAINER */}
         <div className="order-1 col-span-full">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8827.330741966553!2d2.308756110118289!3d48.87000842543867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66fc4f8f3049b%3A0xcbb47407434935db!2s18%20Av.%20des%20Champs-%C3%89lys%C3%A9es%2C%2075008%20Paris!5e0!3m2!1sfr!2sfr!4v1635492407441!5m2!1sfr!2sfr" 
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3909.598899478631!2d77.36863867157797!3d11.508830400000019!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba92394aeb2889b%3A0x188c66fe1e599ebb!2sSSV%20TRADERS!5e0!3m2!1sen!2sin!4v1714836475046!5m2!1sen!2sin" 
             title="map" scrolling="no" frameborder="0"
-            width="100%" height="300px"
+            width="100%" height="350px"
             className="" 
             loading="lazy" 
           />
@@ -80,14 +80,14 @@ const Contact = () => {
             {/* ::Title Contact Us */}
             <h2 className="text-4xl font-oswald uppercase">Contact us</h2>
             {/* ::Text */}
-            <p className="text-sm text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis unde, voluptatibus nemo molestiae iure, repudiandae quaerat ipsam, labore sed dolorem nisi odit at esse ullam suscipit quidem necessitatibus aut modi.</p>
+            <p className="text-sm text-gray-500">if you have any queries feel free to contact us</p>
             {/* ::Email contact */}
             <a href="#mail" className="inline-flex items-center text-sm text-blue-400 font-semibold hover:text-blue-500">
               <MailIcon className="mr-2 w-5 text-gray-400" />
-              mail-contact@fancycontact.com
+              ssvtraders@gmail.com
             </a>
             {/* ::Address */}
-            <p className="text-sm text-gray-500 leading-6">18 Avenue des Champs-Élysées, <br /> 75008 Paris <br /> France</p>
+            <p className="text-sm text-gray-500 leading-6">No 2/3 SivaSakthi Nagar <br /> Thanthonimalai  <br /> Karur- 639005</p>
             {/* ::Socials */}
             <div className="flex items-center">
               {/* :Twitter */}

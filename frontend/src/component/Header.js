@@ -58,7 +58,7 @@ const Header = () => {
                 }
                 
                 {
-                  userData.image ? <p className='cursor-pointer text-white bg-red-500 px-2' onClick={handleLogout}>Logout ({userData.firstName})</p> : <Link to={"login"} className='whitespace-nowrap cursor-pointer px-2'>Login</Link>
+                  userData.email ? <p className='cursor-pointer text-white bg-red-500 px-2' onClick={handleLogout}>Logout ({userData.firstName})</p> : <Link to={"login"} className='whitespace-nowrap cursor-pointer px-2'>Login</Link>
                 }
                 <nav className='text-base md:text-lg flex flex-col md:hidden'>
                   <Link to={""} className='px-2 py-1'>Home</Link>
